@@ -35,7 +35,7 @@ class NoteCardWidget extends StatelessWidget {
          // mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-              Image.network(note.url_imagen,fit: BoxFit.cover,),
+              Image.network(note.url_imagen,),
           Text(
               note.title,
               style: TextStyle(
@@ -45,7 +45,7 @@ class NoteCardWidget extends StatelessWidget {
               ),
             ),
             SizedBox(
-              width: MediaQuery.of(context).size.width / 4,
+              width: MediaQuery.of(context).size.width * 0.15,
             ),
             Align(
               alignment: Alignment.center,

@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:pokemon_tiktok/Componentes/Pokemones.dart';
 import 'package:http/http.dart' as http;
@@ -155,13 +154,13 @@ class categoria extends State<lista>{
                               child: Image.network(filtro[index].url_imagen,fit: BoxFit.fill, width: 300)
                           ),
                           Container(
-                            padding: const EdgeInsets.only(left: 5.0,top: 70,right: 5.0,bottom: 5.0),
+                            padding: const EdgeInsets.only(left: 5.0,top: 40,right: 5.0,bottom: 5.0),
                             child: Row(
                               children: [
-                                SizedBox(width: 10,),
+                                SizedBox(width: 5,),
                                 Container(
-                                    height: 60,
-                                    width: 70,
+                                    height: heightSize * 0.1,
+                                    width: widthSize * 0.17,
                                     decoration: BoxDecoration(
                                       color: _lightColors[1],
                                       borderRadius: BorderRadius.only(
@@ -180,8 +179,8 @@ class categoria extends State<lista>{
                                               fontSize: 15)),)
                                 ),
                                 Container(
-                                    height: 60,
-                                    width: 70,
+                                    height: heightSize * 0.1,
+                                    width: widthSize * 0.17,
                                     decoration: BoxDecoration(
                                       border: Border.all(color: Colors.black38),
                                       color: Colors.white,
@@ -200,10 +199,10 @@ class categoria extends State<lista>{
                                               fontFamily: "Poppins-Bold",
                                               fontSize: 15)),)
                                 ),
-                                SizedBox(width: 30,),
+                                SizedBox(width: 15,),
                                 Container(
-                                    height: 60,
-                                    width: 70,
+                                    height: heightSize * 0.1,
+                                    width: widthSize * 0.17,
                                     decoration: BoxDecoration(
                                       color: _lightColors[1],
                                       borderRadius: BorderRadius.only(
@@ -222,8 +221,8 @@ class categoria extends State<lista>{
                                               fontSize: 15)),)
                                 ),
                                 Container(
-                                    height: 60,
-                                    width: 70,
+                                    height: heightSize * 0.1,
+                                    width: widthSize * 0.17,
                                     decoration: BoxDecoration(
                                       border: Border.all(color: Colors.black38),
                                       color: Colors.white,
@@ -246,13 +245,13 @@ class categoria extends State<lista>{
                             ),
                           ),
                           Container(
-                            padding: const EdgeInsets.only(left: 5.0,top: 170,right: 5.0,bottom: 5.0),
+                            padding: const EdgeInsets.only(left: 5.0,top: 150,right: 5.0,bottom: 5.0),
                             child: Row(
                               children: [
                                 SizedBox(width: 10,),
                                 Container(
-                                    height: 60,
-                                    width: 70,
+                                    height: heightSize * 0.1,
+                                    width: widthSize * 0.17,
                                     decoration: BoxDecoration(
                                       color: _lightColors[1],
                                       borderRadius: BorderRadius.only(
@@ -271,8 +270,8 @@ class categoria extends State<lista>{
                                               fontSize: 15)),)
                                 ),
                                 Container(
-                                    height: 60,
-                                    width: 70,
+                                    height: heightSize * 0.1,
+                                    width: widthSize * 0.17,
                                     decoration: BoxDecoration(
                                       border: Border.all(color: Colors.black38),
                                       color: Colors.white,
@@ -293,8 +292,8 @@ class categoria extends State<lista>{
                                 ),
                                 SizedBox(width: 30,),
                                 Container(
-                                    height: 60,
-                                    width: 140,
+                                    height: heightSize * 0.1,
+                                    width: widthSize * 0.27,
                                     decoration: BoxDecoration(
                                       border: Border.all(color: Colors.black38),
                                       color: Colors.white,
@@ -317,7 +316,7 @@ class categoria extends State<lista>{
                             ),
                           ),
                           Container(
-                              padding: const EdgeInsets.only(left: 5.0,top: 220,right: 5.0,bottom: 5.0),
+                              padding: const EdgeInsets.only(left: 5.0,top: 220,right: 5.0,bottom: 4.0),
                               child: Center(
                                 child:  ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
@@ -333,7 +332,7 @@ class categoria extends State<lista>{
                                       ),
                                       TextButton(
                                         style: TextButton.styleFrom(
-                                          padding: const EdgeInsets.only(left: 110,right: 110,top: 20,bottom: 20),
+                                          padding: const EdgeInsets.only(left: 80,right: 80,top: 15,bottom: 15),
                                           primary: Colors.white,
                                           textStyle: const TextStyle(fontSize: 17),
                                         ),
